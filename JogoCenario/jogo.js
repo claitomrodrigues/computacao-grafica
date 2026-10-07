@@ -11,6 +11,7 @@ class MeuJogo extends JS_CG_2D_API {
     teclaPressionada(e) {
         if (e.code === "ArrowLeft") this.teclas.esquerda = true;
         if (e.code === "ArrowRight") this.teclas.direita = true;
+        if (e.code === "ArrowUp") this.jogador.pular();
     }
 
     teclaLiberada(e) {
